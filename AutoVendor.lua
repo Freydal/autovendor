@@ -646,9 +646,7 @@ function AV:MERCHANT_SHOW()
 						end
 					else
 						local itemInfo = C_Container.GetContainerItemInfo(bag, slot)
-						print(itemInfo)
 						if itemInfo then
-						    print(itemInfo)
 						    local itemCount = itemInfo.stackCount
 						    local sellValue = itemCount * select(11, GetItemInfo(link))
                             if sellValue > 0 then
